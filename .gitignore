@@ -32,7 +32,15 @@ yarn-debug.log*
 !.env.example
 
 # Datasets - keep locally
-dataset/
+dataset/*
+!dataset/raw/
+!dataset/processed/
+
+dataset/raw/*
+!dataset/raw/.gitkeep
+
+dataset/processed/*
+!dataset/processed/.gitkeep
 
 # Generated ML model files
 *.pkl
